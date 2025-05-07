@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이저태그코리아</title>
+    <link rel="stylesheet" href="laser-main/css/reset.css">
+    <style>
+      body {height: 100%; background: url('images/bg.jpg') center;}
+      .wrap {position: relative; height: 100%;}
+      .intro {position: relative;}
+      .intro.pc {width: 100%; height: 100%;  display: flex; justify-content: center; align-items: center;}
+      .intro.pc figure {padding: 0 10vw;}
+      .pc {display: flex;}
+      .mobile {display: none !important;}
+      .intro figure img {width: 100%;}
+      .intro.pc figure img {width: 100%; max-width: 1456px; height: 100%; object-fit: cover;}
+      
+      .btns {position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+      .btns a {position: absolute; z-index: 2;}
+      
+      .btns a.btn_active {left: 9vw; top: 17vw; animation: active 0.5s forwards;}
+      .btns a.btn_lazer {right: 9vw; top: 27vw; animation: lazer 0.5s forwards;}
+      .btns a.btn_tagkorea {left: 50%; top: 80%; transform: translateX(-50%); animation: tag 0.5s forwards;}
+
+      @keyframes active {
+        0% {left: 50vw;}
+        100% {left: 9vw;}
+      }
+      @keyframes lazer {
+        0% {right: 50vw;}
+        100% {right: 9vw;}
+      }
+      @keyframes tag {
+        0% {bottom: 0%;}
+        100% {bottom: -5%;}
+      }
+
+      @media screen and (max-width:1200px) {
+        .btns a.btn_active {top: 25vw;}
+        .btns a.btn_lazer {top: 35vw;}
+        .btns a.btn_tagkorea {bottom: 70%;}
+      }
+      @media screen and (max-width:800px) {
+        .wrap {height: auto;}
+        .pc {display:none !important;}
+        .intro.mobile {display: block !important;}
+        .btns a.btn_active {top: 10vh; left: 5vw;}
+        .btns a.btn_lazer {top: 50%; right: 5vw;}
+        /* .btns a.btn_tagkorea {top: 40%;} */
+      }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+      <div class="intro pc">
+        <figure><img src="images/intro_pc.jpg" alt=""></figure>
+      </div>
+  
+      <div class="intro mobile">
+        <figure><img src="images/intro_mobile.jpg" alt=""></figure>
+      </div>
+  
+      <div class="btns">
+        <a href="active-main/active-arena.html" class="btn_active"><img src="images/btn_active.png" alt=""></a>
+        <a href="laser-main/laser-arena.html" class="btn_lazer"><img src="images/btn_lazer.png" alt=""></a>
+        <a href="company/company.html" class="btn_tagkorea"><img src="images/btn_tag.png" alt=""></a>
+      </div>
+    </div>
+
+
+
+    <script src="laser-main/script/jquery-3.7.1.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>

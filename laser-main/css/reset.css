@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+* {margin: 0; padding: 0;box-sizing: border-box;}
+li {list-style: none;}
+a {color: #222; text-decoration: none;}
+h1, h2, h3, p, span{text-decoration: none;}
+img {vertical-align: top; border: 0;max-width: 100%;}
+table {border-collapse: collapse;}
+caption {width: 0; height: 0; overflow: hidden; font-size: 0; text-indent: -9999px; position: absolute; left: -9999px; color: transparent;}
+html, body {height: 100%;}
+input, fieldset {outline: 0; border: 0;}
+button {background: none; border: 0; cursor: pointer;}
+label {cursor: pointer;}
+
+

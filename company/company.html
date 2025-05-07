@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이저태그코리아</title>
+    <link rel="stylesheet" href="../laser-main/css/reset.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+         @font-face {
+    font-family: 'Paperlogy-1Thin';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-1Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-style: normal;
+}
+              @font-face {
+    font-family: 'Paperlogy-2ExtraLight';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-2ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-style: normal;
+}
+              @font-face {
+    font-family: 'Paperlogy-3Light';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-3Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+              @font-face {
+    font-family: 'Paperlogy-4Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-4Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+              @font-face {
+    font-family: 'Paperlogy-5Medium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-5Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+              @font-face {
+    font-family: 'Paperlogy-6SemiBold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-6SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+              @font-face {
+    font-family: 'Paperlogy-7Bold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-7Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+              @font-face {
+    font-family: 'Paperlogy-8ExtraBold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-8ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+}
+              @font-face {
+    font-family: 'Paperlogy-9Black';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-9Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+}
+        body {background:#000 url(images/bg_company.jpg) top center no-repeat; background-size: cover;font-family: 'Paperlogy-3Light';}
+        .centerbox {max-width: 1200px; margin: 0 auto; padding: 100px 20px 0 20px; text-align: center; }
+        h1 {text-align: center;}
+        .greeting {margin-top: -100px; text-align: center; display: inline-flex; position: relative; }
+        .greeting .text {position: absolute; color: #fff; font-size: 24px; width: 60%; left: 50%; top: 50%; transform: translate(-50%,-50%); word-break: keep-all; line-height: 1.6;}
+        .greeting2 {padding: 60px 0;}
+        .greeting2 .text {color: #fff; font-size: 20px; word-break: keep-all; line-height: 1.8}
+
+        .pc {display: block;}
+        .mobile {display: none;}
+
+        .btns {display: flex; gap: 30px; padding: 100px 20px 200px 20px; justify-content: center;}
+
+        @media screen and (max-width:777px) {
+            .greeting {margin-top: 50px;}
+            .greeting2 {padding: 50px 30px;}
+            .greeting2 br {display: none;}
+            .greeting2 .text { text-align: center;}
+            
+            .pc {display: none;}
+            .mobile {display: block;}
+        }
+        @media screen and (max-width:550px) {
+            .greeting .text {font-size: 15px;}
+            .greeting2 {animation: greeting2 0.6s forwards; visibility: hidden;}
+            @keyframes greeting2 {
+                0% {visibility: hidden}
+                100% {visibility: visible;}
+            }
+            .greeting2 .text {font-size: 15px; }
+            .btns {flex-direction: column; align-items: center;;}
+        }
+    </style>
+</head>
+<body>
+    <div class="centerbox">
+        <h1><img src="images/company_name.png" alt="레이저태그코리아"></h1>
+        
+        
+        <div class="greeting">
+            <img src="images/textbox.png" alt="" class="pc">
+            <img src="images/textbox_mobile.png" alt="" class="mobile">
+
+            <div class="text">
+                창의적이고 열정적인 사람들이 모였습니다.<br>
+                누구보다 건강하고 즐거운 놀이문화를 만들기 위해
+                끊임없는 창의성과 혁신으로 연구를 하고 있습니다.
+                새롭고 무한한 즐거움을 선사하는 기업.
+                <b>레이저태그코리아</b>입니다.
+            </div>
+        </div>
+
+        <div class="greeting2" data-aos="fade-up-right"
+        data-aos-offset="300"
+        data-aos-duration="250">
+            <div class="text">
+                2018년 국내 최초 LASER TAG GAME PROGRAM을 도입하여 <br>
+                국내에 공급 및 행사 진행을 시작으로 2021년엔 LASERARENA<br> 
+                1호 홍대점을 오픈하였습니다. 현재는 전국 각지에 직영점과<br>
+                프랜차이즈를 운영 중에 있으며 러시아, 미국, 유럽 등의 <br>
+                LASERTAG 업체(cybertag,  lasermaxx, laserblaster등) 다섯 곳의 딜러쉽을 <br>
+                보유하고 있어 국내 최대의 LASERTAG GAME  장비 공급과 문화를 책임지는 <br>
+                회사로 성장하고 있습니다.<br><br>
+    
+                LASERARENA 와 ACTIVE ARENA 의 두가지 브랜드로 국내에 <br>
+                새로운 놀이문화를 정착시키  는데 힘쓰고 있습니다.
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="btns" data-aos="fade-up"
+    data-aos-offset="300"
+    data-aos-duration="250">
+        <a href="../active-main/active-arena.html" class="btn_active"><img src="images/btn_active.png" alt=""></a>
+        <a href="../laser-main/laser-arena.html" class="btn_lazer"><img src="images/btn_lazer.png" alt=""></a>
+      </div>
+
+
+      
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+</body>
+</html>
